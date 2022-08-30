@@ -1,4 +1,6 @@
-# Welcome to the ecancer API
+---
+title: Welcome to the ecancer API
+---
 
 ## Accessing the API
 
