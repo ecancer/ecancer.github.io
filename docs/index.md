@@ -1,7 +1,3 @@
----
-title: Welcome to the ecancer API
----
-
 ## Accessing the API
 
 A web interface is provided at the root URL of the API to define and 
@@ -11,7 +7,7 @@ try-it-out functionality. The schema are documented.
 After trying out an endpoint, the appropriate CURL request is shown.
 
 ~~~
-Endpoint:           https://api.ecancer.org  (API web interface including try-it-out)
+Endpoint:           https://api.ecancer.org
 Authentication:     basic authentication
 ~~~
 
