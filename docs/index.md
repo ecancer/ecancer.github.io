@@ -18,6 +18,14 @@ Intended use:
 1. Call each endpoint repeatedly to obtain a full index of all entity types.
 2. Use the last-update filtering to keep indexes up-to-date for entities which have changed since the initial index was created.
 
+## Order of results
+
+The resource collection endpoints are configured to return results in
+reverse publication date order. The ordering can be changed. Use the web
+interface and change the order with the `order[publicationDate]` option to 
+try this out. The results will include the curl request for the selected
+ordering.
+
 ## Downloading videos from Vimeo
 
 Intended use:
