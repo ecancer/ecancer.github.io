@@ -30,12 +30,12 @@ The `articleNo` is what is used in URIs in the website.
 These will have the same values for News and Video i.e. `id == articleNo`.  
 However, they are not necessarily, or generally, the same for Articles and Editorials.
 
-For example: Article with `id=301` and `articleNo=300` is requested at `/articles/301`.
+Example: Article with `id=301` and `articleNo=300` is requested at `/articles/301`.
 
 NB: for the **Vimeo** endpoint, the `id` is the Vimeo ID which is generally a long integer.
 It is this longer ID which is required in the `vimeos/{id}` endpoint.
 
-For example: Video with `id=10466` and `articleNo=10466` has Vimeo ID 719042458.
+Example: Video with `id=10466` and `articleNo=10466` has Vimeo ID 719042458.
 
 
 ### Ordering of results
@@ -75,7 +75,8 @@ file iteself (usually .mp4) from the Vimeo hosting service.
 
 NB: **Vimeo implements rate-limiting**.
 The rate-limiting data from Vimeo is returned in the headers of the API response.  
-For example:
+
+Example:
 ~~~
  x-ratelimit-limit: 1000 
  x-ratelimit-remaining: 996 
@@ -95,5 +96,5 @@ headers, containing the `x-ratelimit` values are displayed below the returned bo
 (cycling through the pages) to obtain all pages for each of the resource types.
 2. Form your full index from these results.
 3. Use the `updateDate` filters regularly (each day as a minimum) to keep the indexes 
-up-to-date for new or updated resource since the initial index was created.
+up-to-date for new or updated resources since the initial index was created.
 

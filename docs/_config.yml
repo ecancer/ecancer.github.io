@@ -1,6 +1,6 @@
-theme: jekyll-theme-midnight
+theme: jekyll-theme-cayman
 title: ecancer API documentation
-description: Documentation for the ecancer API.
+description: User-manual for the ecancer API.
 favicon: /docs/favicon.ico
 github:
     is_project_page: false
