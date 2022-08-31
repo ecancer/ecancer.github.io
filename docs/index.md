@@ -1,3 +1,5 @@
+# The *e*cancer API
+
 ## Accessing the API
 
 ~~~
