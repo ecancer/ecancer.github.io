@@ -23,7 +23,7 @@ Please note that the schema, including individual fields, are documented in the 
 
 ### The `id` field
 
-Each of the ecancer resource types {Article, Editorial, News, Video} has an `id` field
+Each of the *e*cancer resource types {Article, Editorial, News, Video} has an `id` field
 and also an `articleNo` field.
 
 The `id` should be considered the database identifier and used in the individual endpoints.   
@@ -60,6 +60,8 @@ These can be combined to form date selection periods.
 
 Date format example: `2020-01-01T12:01:02+00:00`
 
+NB: dates stored in the database are UTC.
+
 ### Downloading videos from Vimeo
 
 To download a video from the Vimeo hosting platform, the following procedure
@@ -92,11 +94,15 @@ time regardless of the limit data.
 Use the API dashboard to try out the vimeo endpoint. The returned
 headers, containing the `x-ratelimit` values are displayed below the returned body.
 
-### To setup and update an index of ecancer content, the following procedure may be used:
+### To setup and update an index of *e*cancer content, the following procedure may be used:
 
-1. Call each resource endpoint (`/articles`, `/editorials`, `/news`, `/videos`) repeatedly
-(cycling through the pages) to obtain all pages for each of the resource types.
+1. Call each resource endpoint (`/articles`, `/editorials`, `/news`, `/videos`), 
+cycling through the pages, to obtain all pages for each of the resource types.
 2. Form your full index from these results.
-3. Use the `updateDate` filters regularly (each day as a minimum) to keep the indexes 
-up-to-date for new or updated resources since the initial index was created.
+3. Use the `updateDate` filters regularly (each day as a minimum) 
+on each resource endpoint, to keep indexes up-to-date for new or updated resources
+since the initial index was created.
+
+It is important to keep indexes up to date as *e*cancer admin staff sometimes update 
+or deactivate resources due to some client-based requirement or restriction.
 
