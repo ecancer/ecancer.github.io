@@ -77,6 +77,13 @@ There is one link per video resolution. Expiry times are given.
 3. Use the download link for the required resolution to download the video
 file iteself (usually .mp4) from the Vimeo hosting service.
 
+NB: The `/videos` endpoint returns all Vimeo video sources for a given video resource.
+However, some Vimeo videos have private visibility and are not publicly viewable.
+These are not returned by the `/vimeo/{id}` endpoint - they return 404.
+Generally, the first Vimeo video source returned will be the one visible to the public,
+but if that gets a 404 from the `/vimeo/{id}` endpoint, then checkout other availabe
+video sources for that resource.
+
 NB: **Vimeo implements rate-limiting**.
 The rate-limiting data from Vimeo is returned in the headers of the API response.  
 
