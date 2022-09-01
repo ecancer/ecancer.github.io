@@ -9,7 +9,7 @@ Example:            https://user:password@api.ecancer.org
 ~~~
 
 A web dashboard is provided at [api.ecancer.org](https://api.ecancer.org).
-The dashboard provides functionality to explore and test the API.
+The dashboard has functionality to explore and test the API.
 Each endpoint is given with try-it-out functionality and test filtering.
 The schema are documented.
 
