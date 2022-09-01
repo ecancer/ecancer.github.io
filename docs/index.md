@@ -74,6 +74,7 @@ The **Vimeo ID** is under the `sources.serviceVideoId` key.
 2. Call the **Vimeo endpoint** `/vimeo/{id}` using the **Vimeo ID**.
 The result should contain a set of time-limited secure download links. 
 There is one link per video resolution. Expiry times are given.
+(some will return 404 due to privacy settings - see NB below).
 3. Use the download link for the required resolution to download the video
 file iteself (usually .mp4) from the Vimeo hosting service.
 
