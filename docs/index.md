@@ -43,10 +43,10 @@ Example: Video with `id=10466` and `articleNo=10466` has Vimeo ID 719042458.
 ### Ordering of results
 
 The resource collection endpoints are configured to return items in
-reverse `publicationDate` order by default.
+reverse `publicationDate` and reverse `updateDate` order by default.
 
 A different ordering can be specified. Use the dashboard and change the order
-with the `order[publicationDate]` option to try this out.
+with the `order[publicationDate]` or `order[updateDate]` options to try this out.
 The results will include the curl request for the selected ordering.
 
 ### Filtering of results by date
