@@ -1,6 +1,6 @@
-# ecancer documentation
+# ecancer API documentation
 
-Documentation for ecancer services.
+Documentation for the ecancer API.
 
 This documentation is served at: ecancer.github.io
 
